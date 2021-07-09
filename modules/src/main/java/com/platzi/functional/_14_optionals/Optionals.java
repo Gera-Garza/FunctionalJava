@@ -76,7 +76,7 @@ public class Optionals {
 
 
         //Y en caso de que nuestro dato sea muy complejo:
-        dato = optional.orElseGet(Optionals::complexFunction);
+        dato = optional.orElseGet(com.platzi.functional._14_optionals.Optionals::complexFunction);
 
 
         //O con una lambda:
@@ -94,7 +94,7 @@ public class Optionals {
 
 
 
-        //Incluso hacer operaciones para generar nuevos optionals segun sea necesario:
+        //Incluso hacer operaciones para generar nuevos Optionals segun sea necesario:
         Optional<String> subOptional = optional.filter(String::isEmpty);
 
 

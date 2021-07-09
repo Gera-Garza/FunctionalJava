@@ -81,4 +81,20 @@ public class Ageutils {
     }
 }
 ```
+### Inference
+In this case is when java of what kind of result is specting.. a object a String, Integer etc.
+here is an example
+```java
+public class Inferencia {
+    public static void main(String[] args) {
+        Function<Integer,String> funcionConvertidora =
+                x -> "Al doble: " + (x*2);
+
+        List<String> alumnos = NombresUtils.getList("Hugo","Paco","Luis");
+        alumnos.forEach((String name) -> System.out.println(name));
+        alumnos.forEach(name -> System.out.println(name));
+        alumnos.forEach(System.out::println);
+    }
+}
+```
 ### 
