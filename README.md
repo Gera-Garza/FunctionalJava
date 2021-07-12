@@ -97,4 +97,10 @@ public class Inferencia {
     }
 }
 ```
-### 
+### Special_interfces
+In functinoal java there are some commonly used interfaces:
+* Consumer<T>: receibe a data of type T and did not generate any result
+* Function<T,R>: this take one data of type T and generate a result of type R
+* Predicate<T>: Take one data of type T and evaluate if the data acomplish the condition.
+* Supplier<T>: it does not receive any data, but generate data of type T each time it is call
+* UnaryOperator<T>: recibe one data of type T and generate a data of type T
